@@ -20,7 +20,7 @@ module.exports = function(opts) {
                 }
 
                 if (result.code) {
-                    file.contents = new Buffer(result.code);
+                    file.contents = Buffer.from(result.code);
                 } else {
                     const err = new Error('Uglify failed to handle file.');
 
