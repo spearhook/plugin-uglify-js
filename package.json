@@ -4,8 +4,10 @@
   "main": "index.js",
   "author": "viveleroi",
   "license": "MIT",
+  "peerDependencies": {
+    "uglify-js": "^3.x"
+  },
   "dependencies": {
-    "through2": "^3.0.0",
-    "uglify-js": "^3.4.9"
+    "through2": "^4.0.2"
   }
 }
