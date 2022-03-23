@@ -1,7 +1,7 @@
-const through2 = require('through2');
-const uglify = require('uglify-js');
+import through2 from 'through2';
+import uglify from 'uglify-js';
 
-module.exports = function(opts) {
+export default function(opts) {
     return () => through2.obj(function(file, encoding, cb) {
         if (file.isNull()) {
             // nothing to do
